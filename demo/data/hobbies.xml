@@ -1,0 +1,26 @@
+<data>
+    <record model="demo.hobby" id="demo.hobby_biking">
+        <field name="name">Biking</field>
+    </record>
+    <record model="demo.hobby"  id="demo.hobby_singing">
+        <field name="name">Singing</field>
+    </record>
+    <record model="demo.hobby" id="demo.hobby_swimming">
+        <field name="name">Swimming</field>
+    </record>
+    <record model="demo.hobby" id="demo.hobby_camping">
+        <field name="name">Camping</field>
+    </record>
+    <record model="demo.hobby" id="demo.hobby_gaming">
+        <field name="name">Gaming</field>
+    </record>
+    <record model="demo.hobby" id="demo.hobby_minecraft">
+        <field name="name">Minecraft</field>
+    </record>
+    <record model="demo.hobby" id="demo.hobby_rts">
+        <field name="name">RTS games</field>
+    </record>
+    <record model="demo.hobby" id="demo.hobby_gardening">
+        <field name="name">Gardening</field>
+    </record>
+</data>

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+demo.access_demo_hobby,access_demo_hobby,demo.model_demo_hobby,base.group_user,1,1,1,1
+demo.access_demo_hobby_public,access_demo_hobby_public,demo.model_demo_hobby,base.group_public,1,0,0,0
