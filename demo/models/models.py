@@ -18,7 +18,7 @@ class User(models.Model):
     def _description_is_required(self):
         for user in self:
             if not user.description:
-                raise ValueError(f'Description is required')
+                raise ValueError('Description is required')
 
     @api.constrains('description')
     def _description_is_one_line(self):
