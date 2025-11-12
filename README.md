@@ -9,3 +9,5 @@ A L'AIDE
 NOOOON PAUVRES ORPHELINS
 
 *BLARG DANS LE MUR*
+
+*Petite fumée là*
