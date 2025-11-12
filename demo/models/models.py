@@ -21,7 +21,7 @@ class User(models.Model):
     @api.constrains('description')
     def _description_is_required(self):
         for user in self:
-            if not user.description :
+            if not user.description:
                 raise ValueError(f'Description cannot be emppty, got `{user.description}`')
 
 
