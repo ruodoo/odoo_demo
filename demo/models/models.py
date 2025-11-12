@@ -18,6 +18,13 @@ class User(models.Model):
         for user in self:
             if user.description and '\n' in user.description:
                 raise ValueError(f'Description must be oneline, got `{user.description}`')
+    @api.constrains('description')
+    def _description_is_required(self):
+        for user in self:
+            if not user.description :
+                raise ValueError(f'Description cannot be emppty, got `{user.description}`')
+
+
 
 class Hobby(models.Model):
     _name = 'demo.hobby'
