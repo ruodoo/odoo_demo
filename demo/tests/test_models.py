@@ -26,10 +26,10 @@ class TestUsers(TransactionCase):
         with mute_logger('odoo.sql_db'):
             with self.assertRaises(Exception):
                 user = self.env['res.users'].create({
-                    'name': 'Marie-Noël',
+                    'name': 'Marie',
                     'login': 'mnv',
-                    'description': None
                 })
+                user.description = None
 
     def test_description_one_line(self):
         with self.assertRaises(ValueError) as error_catcher:
