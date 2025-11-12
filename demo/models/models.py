@@ -12,7 +12,7 @@ class User(models.Model):
         if 'description' not in vals:
             vals['description'] = f"I'm {vals['name']}"
         return super(User, self).create(vals)
-                                        
+
     @api.constrains('description')
     def _description_is_one_line(self):
         for user in self:
