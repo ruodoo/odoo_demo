@@ -9,10 +9,10 @@ class Partner(models.Model):
 
     @api.constrains('hobby', 'hobbies')
     def _constraint_hobby_in_hobbies(self):
-         for partner in self:
-             if partner.hobby and partner.hobby not in partner.hobbies:
-                 e = self.env._("The favorite hobby must be listed in the hobbies.")
-                 raise ValidationError(e)
+        for partner in self:
+            if partner.hobby and partner.hobby not in partner.hobbies:
+                e = self.env._("The favorite hobby must be listed in the hobbies.")
+                raise ValidationError(e)
 
 
 class Hobby(models.Model):
