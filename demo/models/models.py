@@ -14,6 +14,7 @@ class Partner(models.Model):
                 e = self.env._("The favorite hobby must be listed in the hobbies.")
                 raise ValidationError(e)
 
+
 class Hobby(models.Model):
     _name = 'demo.hobby'
     _description = 'Topic'
